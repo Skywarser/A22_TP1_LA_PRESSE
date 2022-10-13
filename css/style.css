@@ -1,0 +1,21 @@
+* {
+    border: solid 1px black;
+}
+
+.topnavbar {
+    display:flex;
+    margin: auto;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.topnavbar a {
+    text-align: center;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    padding-left: 0px;
+}
