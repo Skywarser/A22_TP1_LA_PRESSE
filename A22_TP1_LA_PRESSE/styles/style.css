@@ -15,7 +15,8 @@
 #menu > a {
         display: inline-flex;
         justify-content: space-around;
-        margin-top: 25px;
+        margin-top: auto;
+        margin-bottom:auto;
         font-size: 13px;
         padding-right: 10px;
         padding-left: 5px;
@@ -23,59 +24,87 @@
         color: white;
         }
 
-#article_top {
+#articles_autres{
+    display:flex;
+    background-color: turquoise;
+    width:auto;
+    height:100px;
+    margin: 30px 95px 30px;
+
+}
+
+#articles_autres > div{
+    height:100px;
+    width: 600px;
+}
+
+
+
+.container {
+    border:solid chocolate 2px;
+    display:flex;
+    margin-left:95px;
+    margin-right:95px;
+}
+
+
+#section_top {
     background-color:blue;
     display:flex;
-    flex-direction: column;
-    flex-direction:row;
-    width: 600px;
-    height: 275px;
+    width: 775px;
+    height: 350px;
+}
+
+#section_milieu {
+    background-color:red;
+    margin-top:30px;
+    display:flex;
+    width: 775px;
+    height: 460px;
+}
+
+#section_milieu > div{
+    width:258px;
+    height:460px;
+}
+
+#section_bas {
+    background-color:green;
+    display:flex;
+    margin-top:30px;
+    margin-bottom:30px;
+    width: 775px;
+    height: 300px;
+}
+
+#section_bas > div{
+    width:258px;
+    height:300px;
 }
 
 #pub {
-    display:flex;
-    background-color: yellow;
-    width: 1200px;
-    height: 275px;
-    margin-left: 600px;
+    background-color:yellow;
+    width: 300px;
+    height: 600px;
+
 }
 
-#article_milieu {
-    background-color:red;
-    display:flex;
-    flex-direction:row;
-    width: 600px;
-    height: 340px;
+
+
+#articles {
+    display: flex;
+    flex-direction:column;
 }
 
-#article_bas {
-    background-color:green;
-    display:flex;
-    flex-direction:row;
-    width: 600px;
-    height: 275px;
-}
+
+
+
+
 
 footer {
     background-color: purple;
     width: auto;
     height: 200px;
-}
-
-#article_milieu > div {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 340px;
-    
-}
-
-#article_bas > div {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 275px;
-    
 }
 
 
