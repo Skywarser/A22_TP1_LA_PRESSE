@@ -43,6 +43,8 @@
 .container {
     border:solid chocolate 2px;
     display:flex;
+    flex-direction: row;
+    gap:17%;
     margin-left:95px;
     margin-right:95px;
 }
@@ -85,8 +87,7 @@
 #pub {
     background-color:yellow;
     width: 300px;
-    height: 600px;
-
+    height: 1000px;
 }
 
 
