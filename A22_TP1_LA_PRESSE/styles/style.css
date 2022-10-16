@@ -26,7 +26,7 @@
 
 #articles_autres{
     display:flex;
-    background-color: turquoise;
+    background-color: white;
     width:auto;
     height:100px;
     margin: 30px 95px 30px;
@@ -34,6 +34,11 @@
 }
 
 #articles_autres > div{
+    height:100px;
+    width: 600px;
+}
+
+#articles_autres > img{
     height:100px;
     width: 600px;
 }
@@ -70,6 +75,11 @@
     height:460px;
 }
 
+.milieu > img{
+    width: 258px;
+    height: 460px;
+}
+
 #section_bas {
     background-color:green;
     display:flex;
@@ -84,13 +94,19 @@
     height:300px;
 }
 
+.bas > img{
+    width: 192px;
+    height:298px;
+}
+
 #pub {
+    display:flex;
+    flex-direction:column;
+    gap: 30px;
     background-color:yellow;
     width: 300px;
     height: 1000px;
 }
-
-
 
 #articles {
     display: flex;
