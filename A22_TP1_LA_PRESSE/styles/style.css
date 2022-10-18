@@ -11,7 +11,7 @@ header{
     background-color: black;
     color: white;
     display: inline-flex;
-    justify-items: center;
+    justify-content: center;
     font-family: arial, sans-serif;
     height: 70px;
     list-style-type: none;
