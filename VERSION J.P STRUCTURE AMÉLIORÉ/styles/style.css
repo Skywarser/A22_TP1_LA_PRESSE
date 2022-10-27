@@ -1,8 +1,8 @@
-/*
- {
+
+* {
     border: solid 1px black;
 }
-*/
+
 #soutien {
     float: right;
     display:flex;
@@ -87,7 +87,6 @@ flex-direction:column;
 }
 
 #articles_milieu {
-    background-color: red;
     margin-top: 30px;
     display: flex;
     width: 775px;
