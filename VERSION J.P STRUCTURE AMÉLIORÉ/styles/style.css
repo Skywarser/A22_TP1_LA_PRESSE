@@ -4,8 +4,14 @@
 }
 
 body {
+    font-family: Verlag;
 }
 
+header, main, #article_autres {
+    max-width: 1200px;
+    margin:auto;
+}
+ 
 #soutien {
     float: right;
     display:flex;
@@ -18,10 +24,14 @@ body {
     border: solid black 3px;
 }
 
+#navbar {
+    position: sticky;
+    top:0;
+}
+
 header > p {
     display: inline-flex;
     margin-bottom:0px;
-    
 }
 div > p {
     display: inline-flex;
@@ -37,6 +47,9 @@ div > p {
     height: 70px;
     position:sticky;
     top:0;
+    z-index: 9999;
+    max-width: 100%;
+    width: auto;
 }
 
 @font-face {
@@ -61,6 +74,7 @@ div > p {
 
 #navbar > a:hover {
     background-color:blue;
+
 }
 
 #articles_autres {
@@ -94,10 +108,10 @@ div > p {
 #international {
     background-color: rgba(90,121,160);
 }
+
 .texteAutre {
     display:flex;
     flex-direction: column;
-    justify-content:
 }
 
 #articles_autres>img {
@@ -129,9 +143,16 @@ section {
 }
 
 #texte > h2 {
-    font-size:27px;
+    font-size:34.4px;
 }
 
+#texte > h3 {
+    background-color: rgba(90,121,160);
+    font-size:12px;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 6px;
+}
 #article_top {
     display:flex;
     justify-content: center;
@@ -154,13 +175,43 @@ section {
     height: 460px;
 }
 
+.liensmilieu {
+    text-decoration: none;
+}
+
+.liensmilieu > h3 {
+    color: white;
+    background-color: rgba(90,121,160);
+    display: flex;
+    width: fit-content;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.liensmilieu > h2 {
+    color:black;
+}
+
+.liensmilieu > p {
+    color:black;
+}
+
+.liensbas {
+    text-decoration:none;
+}
+
+.liensbas > h {
+
+}
 article > h3 {
     color: white;
     background-color: rgba(90,121,160);
     display: flex;
     width: fit-content;
-    padding: 5px;
+    padding: 6px;
     border-radius: 5px;
+    font-size: 12px;
 }
 
 .milieu {
@@ -192,6 +243,10 @@ aside {
     justify-content: space-between;
     margin-left:30px;
     gap: 30px;
+    position:sticky;
+    top:80px;
+    align-self: flex-start;
+    align-items:center;
 }
 
 #articles {
