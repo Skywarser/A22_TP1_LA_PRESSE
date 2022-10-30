@@ -1,5 +1,5 @@
 
-* {
+ {
     border: solid 1px black;
 }
 
@@ -42,7 +42,7 @@ div > p {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     font-family: arial, sans-serif;
     height: 70px;
     position:sticky;
@@ -83,30 +83,47 @@ div > p {
     justify-content: center;
     background-color: white;
     margin: 30px 0px 30px;
-
+    gap:10px;
 }
 
 #articles_autres>div {
     display: flex;
     height: 100px;
-    width: auto;
+    width: 262px;
+    padding-top: 10px;
+    border-top: solid gray 1px;
 }
 
 #éditoriaux{
     background-color: rgb(195,135,103);
-    border-radius:20px ;
+    border-radius:5px;
+    height: fit-content;
+    padding: 6px;
+    font-size: 12px;
 }
 
 #contexte {
     background-color: rgb(195,135,103);
+    border-radius:5px;
+    padding: 6px;
+    font-size: 12px;
+    height: fit-content;
 }
 
 #financeperso {
     background-color: rgb(32,127,183);
+    border-radius:5px;
+    padding: 6px;
+    font-size: 12px;
+    height: fit-content;
 }
 
 #international {
     background-color: rgba(90,121,160);
+    border-radius:5px;
+    padding: 6px;
+    font-size: 12px;
+    height: fit-content;
 }
 
 .texteAutre {
@@ -122,17 +139,14 @@ div > p {
 main {
     display:flex;
     justify-content: center;
-    border: solid red 3px;
 }
 
 section {
-    border: solid blue 2px;
     display:flex;
     flex-direction:column;
 }
 
 .container {
-    border: solid chocolate 2px;
     display:flex;
     justify-content: center;
 }
@@ -140,6 +154,7 @@ section {
 #texte {
     display:inline-block;
     color:white;
+    margin-left: 10px;
 }
 
 #texte > h2 {
@@ -160,7 +175,6 @@ section {
     background-color: gray;
     background:linear-gradient(to left top, gray, black);
     width: 775px;
-    height: 350px;
 }
 
 #articles_milieu {
@@ -168,11 +182,15 @@ section {
     display: flex;
     width: 775px;
     height: 460px;
+    gap:12px
 }
 
 #articles_milieu>article {
     width: 258px;
     height: 460px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: solid gray 1px;
 }
 
 .liensmilieu {
@@ -229,20 +247,22 @@ article > h3 {
     margin-bottom: 30px;
     width: 775px;
     height: 300px;
+    gap:3px;
 }
 
 #article_bas>article {
     width: 258px;
     height: 300px;
+    padding-top: 10px;
+    border-top: solid gray 1px;
 }
 
-aside {
-    border:solid purple 2px;
+ {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left:30px;
-    gap: 30px;
+    gap:30px;
     position:sticky;
     top:80px;
     align-self: flex-start;
@@ -254,8 +274,57 @@ aside {
     flex-direction: column;
 }
 
+@font-face {
+    font-family: Rubrik;
+    src: url(../polices/Rubrik_1.otf);
+}
+
 footer {
-    background-color: purple;
+    background-color:rgb(238, 237, 237);
     width: auto;
-    height: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    font-family: Rubrik;       
+}
+
+footer div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    column-gap: 0px;
+    height:300px;
+}
+
+
+footer a {
+    font-size: 14px;
+    color: rgb(104,104,104);
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    padding:0px;
+}
+
+footer li {
+    padding-bottom: 12px;
+}
+#container2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(200,200,200);
+    width: 3000px;
+}
+
+#container > div >  ul {
+}
+
+#container2 div p {
+    font-size: 15.75px;
+    font-weight: 500;
 }
