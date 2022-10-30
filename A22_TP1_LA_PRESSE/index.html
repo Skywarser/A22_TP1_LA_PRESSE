@@ -7,16 +7,14 @@
     <title>LaPresse.ca | Actualités et Infos au Québec et dans le monde</title>
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
     <header>
         <img id="logo"
         src="./images/logo.png"
-        alt="logo la presse" height="130px">
-    </header>
-    <navbar>
-        
-        <div id="menu">
+        alt="logo la presse" height="100px">
+        <nav id="navbar">
             <a href="https://www.lapresse.ca/actualites/">ACTUALITÉ</a>
             <a href="https://www.lapresse.ca/international/">INTERNATIONAL</a>
             <a href="https://www.lapresse.ca/debats/">DÉBATS</a>
@@ -30,82 +28,85 @@
             <a href="https://www.lapresse.ca/gourmand/">GOURMAND</a>
             <a href="https://www.lapresse.ca/voyage/">VOYAGE</a>
             <a href="https://www.lapresse.ca/maison/">MAISON</a>
-        </div>
-        </navbar>
-    
+        </nav>
+    </header>
     <main>
 
-        <div id="articles_autres">
-            <div>
-                <img src="./Capture_Section_Autres/Capture.PNG" alt="Éditoriaux">
-            </div>
-            <div>
-                <img src="./Capture_Section_Autres/Capture2.PNG" alt="" width="" height="99px">
-            </div>
-            <div>
-                <img src="./Capture_Section_Autres/Capture3.PNG" alt="" width="" height="99px">
-            </div>
-            <div>
-                <img src="./Capture_Section_Autres/Capture4.PNG" alt="" width="" height="">
-            </div>
-        </div>
+        <section>
+            <nav id="articles_autres">
+                <div>
+                    <img src="./Capture_Section_Autres/Capture.PNG" alt="Éditoriaux">
+                </div>
+                <div>
+                    <img src="./Capture_Section_Autres/Capture2.PNG" alt="" width="" height="99px">
+                </div>
+                <div>
+                    <img src="./Capture_Section_Autres/Capture3.PNG" alt="" width="" height="99px">
+                </div>
+                <div>
+                    <img src="./Capture_Section_Autres/Capture4.PNG" alt="" width="" height="">
+                </div>
+            </nav>
         
-        <div class="container">
+            <div class="container">
 
-            <div id="articles">
-                <section id="section_top">
-                    <a href="https://www.lapresse.ca/actualites/education/2022-10-16/immigration/des-cles-pour-bien-integrer-en-francais.php">
-                        <img src="./Main_Article.PNG" alt="" width="775px" height="350px">
-                    </a>
-                </section>         
-
-                <section id="section_milieu">
-                    <div>
-                        <a href="https://www.lapresse.ca/actualites/grand-montreal/2022-10-16/parc-extension/se-defouler-ballon-en-main.php">
-                            <img class="milieu" src="./Captures_Section_Milieu/Article_1_Section_Milieu.PNG" alt="">
+                <div id="articles">
+                    <article id="article_top">
+                        <a href="https://www.lapresse.ca/actualites/education/2022-10-16/immigration/des-cles-pour-bien-integrer-en-francais.php">
+                            <img src="./Main_Article.PNG" alt="" width="775px" height="350px">
                         </a>
+                    </article>         
+                
+                    <div id="articles_milieu">
+                        <article class="milieu">
+                            <a href="https://www.lapresse.ca/actualites/grand-montreal/2022-10-16/parc-extension/se-defouler-ballon-en-main.php">
+                            </a>
+                            <img src="./images/22dff333fe7335aaa6ef3e922fae7c10.webp" alt="" height="200" width="250">
+                                <h3>Grand Montréal</h3>
+                                <p>Parc-Extension</p>
+                                <h2>Se défouler, ballon en <br>main</h2>
+                                Publié à 5h00
+                        </article>
+                        <article>
+                            <a href="https://www.lapresse.ca/actualites/environnement/2022-10-16/emissions-d-arsenic-a-rouyn-noranda/le-seuil-propose-par-quebec-ne-passe-pas.php">
+                                <img class="milieu" src="./Captures_Section_Milieu/Article_2_Section_Milieu.PNG" alt="">
+                            </a>
+                        </article>
+                        <article>
+                            <a href="https://www.lapresse.ca/international/etats-unis/2022-10-16/petit-guide-des-elections-de-mi-mandat.php">
+                                <img class="milieu" src="./Captures_Section_Milieu/Article_3_Section_Milieu.PNG" alt="">
+                            </a>    
+                        </article> 
                     </div>
-                    <div>
-                        <a href="https://www.lapresse.ca/actualites/environnement/2022-10-16/emissions-d-arsenic-a-rouyn-noranda/le-seuil-propose-par-quebec-ne-passe-pas.php">
-                            <img class="milieu" src="./Captures_Section_Milieu/Article_2_Section_Milieu.PNG" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.lapresse.ca/international/etats-unis/2022-10-16/petit-guide-des-elections-de-mi-mandat.php">
-                            <img class="milieu" src="./Captures_Section_Milieu/Article_3_Section_Milieu.PNG" alt="">
-                        </a>    
-                    </div>
-                </section>
 
-                <section id="section_bas">
-                    <div class="bas">
-                        <img src="./Captures_Section_Bas/Article_1_Section_Bas.PNG" alt="">
+                    <div id="article_bas">
+                        <article class="bas">
+                            <img src="./Captures_Section_Bas/Article_1_Section_Bas.PNG" alt="">
+                        </article>
+                        <article class="bas">
+                            <img src="./Captures_Section_Bas/Article_2_Section_Bas.PNG" alt="" width="" height="">
+                        </article>
+                        <article class="bas">
+                            <img src="./Captures_Section_Bas/Article_3_Section_Bas.PNG" alt="" width="" height="">
+                        </article>
+                        <article class="bas">
+                            <img src="./Captures_Section_Bas/Article_4_Section_Bas.PNG" alt="">
+                        </article>
                     </div>
-                    <div class="bas">
-                        <img src="./Captures_Section_Bas/Article_2_Section_Bas.PNG" alt="" width="" height="">
-                    </div>
-                    <div class="bas">
-                        <img src="./Captures_Section_Bas/Article_3_Section_Bas.PNG" alt="" width="" height="">
-                    </div>
-                    <div class="bas">
-                        <img src="./Captures_Section_Bas/Article_4_Section_Bas.PNG" alt="">
-                    </div>
-                </section>
+                </div>
             </div>
+        </section>
+        
 
-            <div id="pub">
+            <aside id="pub">
                 <div>
                     <img src="./Capture_Pubs/Main_Pub.PNG" widht="300px" height="500px">
                 </div>
                 <div>
                     <img src="./Capture_Pubs/PUB_2.PNG" width="300px" height="500px">
                 </div>
-            </div>
-        </div>
+            </aside>
 </main>
-
-
-
 
     <footer>
     </footer>
