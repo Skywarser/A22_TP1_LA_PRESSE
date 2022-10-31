@@ -1,8 +1,3 @@
-
- {
-    border: solid 1px black;
-}
-
 body {
     font-family: Verlag;
 }
@@ -12,16 +7,30 @@ header, main, #article_autres {
     margin:auto;
 }
  
+header {
+    max-height: 101px;
+}
+
+#date {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 #soutien {
     float: right;
     display:flex;
     justify-content: center;
     background-color: rgb(255,229,2);
     margin-top: 25px;
+    padding: 10px;
     align-items: center;
     width: 200px;
     border-radius: 25px;
     border: solid black 3px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color:black;
 }
 
 #navbar {
@@ -31,7 +40,7 @@ header, main, #article_autres {
 
 header > p {
     display: inline-flex;
-    margin-bottom:0px;
+    margin-bottom: 0px;
 }
 div > p {
     display: inline-flex;
@@ -73,8 +82,7 @@ div > p {
 }
 
 #navbar > a:hover {
-    background-color:blue;
-
+    background-color:rgba(90,121,160)
 }
 
 #articles_autres {
@@ -83,15 +91,21 @@ div > p {
     justify-content: center;
     background-color: white;
     margin: 30px 0px 30px;
-    gap:10px;
+    gap: 10px;
+}
+
+a:hover > .texte_autre > h6 {
+    color:rgba(90,121,160);
 }
 
 #articles_autres>div {
     display: flex;
+    flex-direction: row;
     height: 100px;
     width: 262px;
     padding-top: 10px;
     border-top: solid gray 1px;
+    margin: 0px;
 }
 
 #éditoriaux{
@@ -100,6 +114,10 @@ div > p {
     height: fit-content;
     padding: 6px;
     font-size: 12px;
+    margin-top: 0px;
+    color:white;
+    margin-left: 0px;
+    width: fit-content;
 }
 
 #contexte {
@@ -108,6 +126,9 @@ div > p {
     padding: 6px;
     font-size: 12px;
     height: fit-content;
+    margin-top: 0px;
+    color:white;
+    width: fit-content;
 }
 
 #financeperso {
@@ -116,6 +137,9 @@ div > p {
     padding: 6px;
     font-size: 12px;
     height: fit-content;
+    margin-top: 0px;
+    color:white;
+    width: fit-content;
 }
 
 #international {
@@ -124,11 +148,36 @@ div > p {
     padding: 6px;
     font-size: 12px;
     height: fit-content;
+    margin-top: 0px;
+    color:white;
+    width: fit-content;
 }
 
-.texteAutre {
+.liensautre {
+    text-decoration: none;
+    color:black;
+}
+
+.texte_autre {
     display:flex;
     flex-direction: column;
+    margin-left: 15px;
+}
+
+.texte_autre > h5 {
+    margin: 0px;
+}
+
+.texte_autre > h6 {
+    margin-top: 2px;
+    font-size: 20px;
+    font-weight:900;
+}
+
+.texte_autre > p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
 #articles_autres>img {
@@ -152,7 +201,8 @@ section {
 }
 
 #texte {
-    display:inline-block;
+    display:flex;
+    flex-direction: column;
     color:white;
     margin-left: 10px;
 }
@@ -167,6 +217,8 @@ section {
     border-radius: 5px;
     width: fit-content;
     padding: 6px;
+    margin-top: 50px;
+    font-weight: bolder;
 }
 #article_top {
     display:flex;
@@ -177,6 +229,22 @@ section {
     width: 775px;
 }
 
+#article_top > a {
+    display: flex;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 85%;
+}
+
+a:hover > img {
+    opacity: 95%;
+}
+
+a:hover > h2 {
+    color:rgba(90,121,160)
+}
 #articles_milieu {
     margin-top: 30px;
     display: flex;
@@ -205,10 +273,12 @@ section {
     padding: 6px;
     border-radius: 5px;
     font-size: 12px;
+    margin-top: 7px;
 }
 
 .liensmilieu > h2 {
     color:black;
+    font-weight: bolder;
 }
 
 .liensmilieu > p {
@@ -216,13 +286,11 @@ section {
 }
 
 .liensbas {
+    color:black;
     text-decoration:none;
 }
 
-.liensbas > h {
-
-}
-article > h3 {
+.liensbas > h3 {
     color: white;
     background-color: rgba(90,121,160);
     display: flex;
@@ -257,7 +325,16 @@ article > h3 {
     border-top: solid gray 1px;
 }
 
- {
+#article_bas, h2, p {
+    margin-top:0px;
+}
+
+#article_bas h2 {
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -280,7 +357,7 @@ article > h3 {
 }
 
 footer {
-    background-color:rgb(238, 237, 237);
+    background-color:white;
     width: auto;
     height: 300px;
     display: flex;
@@ -298,9 +375,8 @@ footer div {
     height:300px;
 }
 
-
 footer a {
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(104,104,104);
     text-decoration: none;
 }
@@ -313,18 +389,17 @@ footer ul {
 footer li {
     padding-bottom: 12px;
 }
-#container2 {
+#containerfooter {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(200,200,200);
+    background-color: rgb(220,220,220);
     width: 3000px;
+    padding-top: 50px;
+    margin-top: 80px;
 }
 
-#container > div >  ul {
-}
-
-#container2 div p {
-    font-size: 15.75px;
+#containerfooter div p {
+    font-size: 20px;
     font-weight: 500;
 }
